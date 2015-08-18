@@ -40,7 +40,7 @@ if (_REDIRECT_2_HOMEPAGE) {
 }  
 
 $imageURL = htmlspecialchars($_GET['src']);
-$imageURL = mysql_real_escape_string($imageURL);
+$imageURL = esc_sql($imageURL);
 
 global $_404_error;
 $_404_error = false;
